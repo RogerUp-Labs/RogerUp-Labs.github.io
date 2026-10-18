@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RogerUp Labs</title>
+<meta name="description" content="RogerUp Labs builds flight alerts for families and groups.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f6f8fb; --card: #ffffff; --ink: #0B1F3A; --muted: #4a5d78;
+    --line: #dde4ee; --accent: #c77d00; --chip: #fff3dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0B1F3A; --card: #12294a; --ink: #eef3fa; --muted: #9fb3cc;
+            --line: #23406a; --accent: #F5A524; --chip: #2a3550; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 40px; }
+  .logo { width: 112px; height: 112px; display: block; border-radius: 24px; box-shadow: 0 0 0 1px var(--line); }
+  h1 { font-size: clamp(30px, 7vw, 44px); line-height: 1.15; margin: 28px 0 8px; }
+  .tag { font-size: 20px; color: var(--muted); margin: 0 0 40px; }
+  .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: var(--card);
+          border: 1px solid var(--line); border-radius: 16px; color: inherit; text-decoration: none; }
+  a.card:hover { border-color: var(--accent); }
+  .card img { width: 56px; height: 56px; flex: none; }
+  .card h2 { font-size: 19px; margin: 0 0 4px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; margin-left: 6px;
+          border-radius: 99px; background: var(--chip); color: var(--accent); vertical-align: 2px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.svg" alt="RogerUp Labs logo">
+  <h1>RogerUp Labs</h1>
+  <p class="tag">Flight alerts for families and groups.</p>
+
+  <div class="cards">
+    <a class="card" href="https://tailwatcher.org">
+      <img src="tailwatcher.svg" alt="">
+      <div>
+        <h2>TailWatcher</h2>
+        <p>Free, open-source alerts when the planes and flights you care about take off and land.</p>
+      </div>
+    </a>
+    <a class="card" href="https://gatherflights.com">
+      <img src="gather.svg" alt="">
+      <div>
+        <h2>Gather <span class="chip">Coming soon</span></h2>
+        <p>Everyone's flights for your wedding, reunion or trip, in one place.</p>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <a href="mailto:hello@rogeruplabs.com">hello@rogeruplabs.com</a>
+    &nbsp;·&nbsp;
+    <a href="https://x.com/RogerUpLabs">@RogerUpLabs on X</a>
+  </footer>
+</main>
+</body>
+</html>
